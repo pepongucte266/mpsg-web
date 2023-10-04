@@ -1,0 +1,15 @@
+.header {
+  .screen--xs &,
+  .screen--sm & {
+    flex-direction: column !important;
+  }
+  .header-logo {
+    width: 230px;
+    height: auto;
+    .screen--xs &,
+    .screen--sm & {
+      flex-direction: column !important;
+      width: 130px;
+    }
+  }
+}

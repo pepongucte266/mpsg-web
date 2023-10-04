@@ -1,0 +1,22 @@
+.header {
+  background-color: #f1f1f1;
+  color: #333;
+  height: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .header-logo {
+    width: 230px;
+    height: auto;
+  }
+  .header-menu-item {
+    font-size: 14.6px !important;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 8px;
+    cursor: pointer;
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
