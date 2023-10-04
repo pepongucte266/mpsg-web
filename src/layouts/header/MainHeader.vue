@@ -2,11 +2,7 @@
 <style lang="scss" src="./MainHeaderResponsive.scss"></style>
 <template>
   <q-header class="header" reveal elevated>
-    <img
-      src="src/assets/images/logo-trans.png"
-      class="header-logo"
-      alt="logo"
-    />
+    <img src="~assets/images/logo-trans.png" class="header-logo" alt="logo" />
     <div v-if="$q.screen.gt.xs" class="header-menu">
       <div
         v-for="(item, index) in menus"

@@ -10,7 +10,7 @@
   <q-page class="contact-us">
     <q-img
       v-if="$q.screen.gt.sm"
-      src="src/assets/images/contactus.jpg"
+      src="~assets/images/contactus.jpg"
       fit="fill"
     />
     <div v-else style="min-width: 300px; height: auto">

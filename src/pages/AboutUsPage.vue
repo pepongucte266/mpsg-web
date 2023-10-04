@@ -8,11 +8,7 @@
 </style>
 <template>
   <q-page class="about-us">
-    <q-img
-      v-if="$q.screen.gt.sm"
-      src="src/assets/images/aboutus.jpg"
-      fit="fill"
-    />
+    <q-img v-if="$q.screen.gt.sm" src="~assets/images/aboutus.jpg" fit="fill" />
     <div v-else style="min-width: 300px; height: auto">
       <q-img
         v-for="index in 3"
