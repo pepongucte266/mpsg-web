@@ -17,8 +17,14 @@
       <q-img
         v-for="index in 4"
         :key="index"
-        :src="`src/assets/images/contactus-mobile-${index}.jpg`"
+        :src="
+          CommonFunction.getImageUrl(`images/contactus-mobile-${index}.jpg`)
+        "
       />
     </div>
   </q-page>
 </template>
+
+<script setup lang="ts">
+import CommonFunction from 'src/common/commonFunction';
+</script>

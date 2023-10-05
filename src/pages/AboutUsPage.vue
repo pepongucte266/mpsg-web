@@ -13,8 +13,13 @@
       <q-img
         v-for="index in 3"
         :key="index"
-        :src="`src/assets/images/aboutus-mobile-${index}.jpg`"
+        :src="CommonFunction.getImageUrl(`images/aboutus-mobile-${index}.jpg`)"
       />
     </div>
   </q-page>
 </template>
+
+<script setup lang="ts">
+import CommonFunction from 'src/common/commonFunction';
+// src/assets/images/aboutus-mobile-${index}.jpg
+</script>
