@@ -5,6 +5,9 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+    <div class="text-center text-grey text-weight-regular q-mt-md">
+      Copyright © 2023. MPSG. All rights reserved
+    </div>
   </q-layout>
 </template>
 

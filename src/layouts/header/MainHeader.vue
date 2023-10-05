@@ -7,6 +7,7 @@
       <div
         v-for="(item, index) in menus"
         class="header-menu-item"
+        :class="item.visible ? '' : 'hidden'"
         :key="index"
         @click="goTo(item.path)"
       >
@@ -28,6 +29,7 @@
             <q-item
               clickable
               v-for="(item, index) in menus"
+              :class="item.visible ? '' : 'hidden'"
               :key="index"
               @click="goTo(item.path)"
             >
@@ -48,30 +50,37 @@ var menus = reactive([
   {
     path: '/',
     label: 'PRODUCTS',
+    visible: false,
   },
   {
     path: '/',
     label: 'ABOUT',
+    visible: true,
   },
   {
     path: '/',
     label: 'FACILITY LOCATOR',
+    visible: false,
   },
   {
     path: '/',
     label: 'SUSTAINABILITY',
+    visible: false,
   },
   {
     path: '/',
     label: 'CAREERS',
+    visible: false,
   },
   {
     path: '/contact-us',
     label: 'CONTACT US',
+    visible: true,
   },
   {
     path: '/',
     label: 'ONLINE PAYMENTS',
+    visible: false,
   },
 ]);
 
